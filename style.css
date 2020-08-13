@@ -1,0 +1,87 @@
+/* CSS has been reset per css-reset.css */
+
+body {
+	/*background: green;*/
+}
+
+header {
+	height: 100px;
+	background: #0f6375;
+}
+/* temporary heights and colors */
+main {
+	height: 500px;
+	background: #6addf7;
+}
+
+.featured-video-container {
+	height: 250px;
+	background: #466d75;
+	text-align: center;
+}
+
+.sidebar-videos {
+	height: 100px;
+	background: #19a2c2;
+	text-align: center;
+}
+/* end temporary heights and colors */
+
+/* Header section */
+nav {
+	display: flex;
+	max-width: 100%;
+	justify-content: space-between;
+	background: lightblue;
+	padding: 1%;
+}
+
+.youtube-nav,
+.search-bar,
+.google-nav {
+	height: 40px;
+	/*flex: 1;*/
+	justify-content: center;
+}
+
+.youtube-nav {
+	background: green;
+}
+
+.search-bar {
+	background: orange;
+}
+
+.google-nav {
+	background: purple;
+}
+
+/* Content section */
+main {
+	display: flex;
+	margin-top: 2%;
+}
+
+.featured-video-container,
+.sidebar-videos {
+	flex: 1;
+}
+
+.featured-video-container {
+}
+
+.sidebar-videos {
+}
+
+/* Reorder main content */
+@media (max-width: 1000px) {
+	main {
+		flex-direction: column;
+	}
+
+	.featured-video-container {
+	}
+
+	.sidebar-videos {
+	}
+}
