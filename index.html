@@ -55,22 +55,52 @@
 		</header>
 
 		<main>
-			<!-- Current vido to play -->
+			<!-- Current video to play -->
 			<div class="featured-video-container">
-				<h2>this is the featured-video section</h2>
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/byva0hOj8CU"
-					frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
-				></iframe>
+				<div class="main-video">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/byva0hOj8CU"
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+				<!-- Title of the current video -->
+				<h2 class="current-video-info">
+					Curious Beginnings | Critical Role | Campaign 2, Episode 1
+				</h2>
+				<!-- view #, date, like, dislike, share etc -->
+				<div class="current-video-details">
+					<div class="view-details">
+						<p>9,353,134 views</p>
+						<p>•</p>
+						<p>Jan 15, 2018</p>
+					</div>
+					<div class="current-video-menu">
+						<a href="#" class="video-menu" title="I like this">
+							<i class="fas fa-thumbs-up"></i>
+						</a>
+						<a href="#" class="video-menu" title="I dislike this">
+							<i class="fas fa-thumbs-down"></i>
+						</a>
+						<a href="#" class="video-menu" title="Share">
+							<i class="fas fa-share"></i>
+						</a>
+						<a href="#" class="video-menu">
+							<i class="fas fa-plus-square"></i>
+							<h3>Save</h3>
+						</a>
+						<a href="#" class="video-menu">
+							<i class="fas fa-ellipsis-h"></i>
+						</a>
+					</div>
+				</div>
 			</div>
 
-			<!-- suggested videos section -->
+			<!-- suggested videos sidebar section -->
 			<div class="sidebar-videos">
-				<h2>this is the sidebar-videos</h2>
 				<ul class="suggested-videos">
 					<li class="video">
 						<img src="images/spencer-imbrock-JAHdPHMoaEA-unsplash.jpg" alt="" />
