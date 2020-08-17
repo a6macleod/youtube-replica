@@ -5,33 +5,153 @@
 		<title>YouTube</title>
 		<link rel="stylesheet" href="css-reset.css" />
 		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/1b41e66b73.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<header>
 			<nav>
+				<!-- Navigation for YouTube links -->
 				<div class="youtube-nav">
-					<p>youtube nav section</p>
-					<!-- <i class="fas fa-bars" 
-						><img src="images/bars-solid.svg" alt="hamburger menu"
-					/></i>-->
-					<!-- <i class="fab fa-youtube"><img src="images/youtube-brands.svg" alt=""></i> -->
+					<a href="#" class="nav-link"><i class="fas fa-bars"></i></a>
+					<a href="#" class="nav-link youtube-link" title="YouTube Home"
+						><i class="fab fa-youtube"></i>
+						<h2 class="youtube-logo">YouTube</h2></a
+					>
 				</div>
-				<div class="search-bar">
-					<p>search bar section</p>
-					<!--  -->
+
+				<!-- Search bar in header -->
+				<div class="search-bar-container">
+					<form action="#">
+						<input type="text" class="search-bar" />
+						<button class="search-button">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
 				</div>
+
+				<!-- Navigation for google links -->
 				<div class="google-nav">
-					<p>google nav section</p>
+					<a href="#" class="nav-link" title="Create a video or post"
+						><i class="fas fa-video"></i
+					></a>
+					<a href="#" class="nav-link" title="YouTube apps"
+						><i class="fas fa-th"></i
+					></a>
+					<a href="#" class="nav-link" title="notifications"
+						><i class="fas fa-bell"></i
+					></a>
+					<a href="#" class="nav-link"
+						><img src="images/face-cup.png" alt="Profile image"
+					/></a>
 				</div>
 			</nav>
 		</header>
 
 		<main>
+			<!-- Current vido to play -->
 			<div class="featured-video-container">
 				<h2>this is the featured-video section</h2>
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/byva0hOj8CU"
+					frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
 			</div>
+
+			<!-- suggested videos section -->
 			<div class="sidebar-videos">
 				<h2>this is the sidebar-videos</h2>
+				<ul class="suggested-videos">
+					<li class="video">
+						<img src="images/spencer-imbrock-JAHdPHMoaEA-unsplash.jpg" alt="" />
+						<span
+							>Photo by
+							<a
+								href="https://unsplash.com/@spencerimbrockphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Spencer Imbrock</a
+							>
+							on
+							<a
+								href="https://unsplash.com/s/photos/neon-sign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Unsplash</a
+							></span
+						>
+					</li>
+
+					<li class="video">
+						<img src="images/daniel-monteiro-HwNCyLWw7hw-unsplash.jpg" alt="" />
+						<span
+							>Photo by
+							<a
+								href="https://unsplash.com/@danielmonteirox?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Daniel Monteiro</a
+							>
+							on
+							<a
+								href="https://unsplash.com/s/photos/neon-girl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Unsplash</a
+							></span
+						>
+					</li>
+
+					<li class="video">
+						<img src="images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg" alt="" />
+						<span
+							>Photo by
+							<a
+								href="https://unsplash.com/@sandrokatalina?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Sandro Katalina</a
+							>
+							on
+							<a
+								href="https://unsplash.com/s/photos/neon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Unsplash</a
+							></span
+						>
+					</li>
+
+					<li class="video">
+						<img src="images/tony-reid-PGdMhonLLZk-unsplash.jpg" alt="" />
+						<span
+							>Photo by
+							<a
+								href="https://unsplash.com/@togna_bologna?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Tony Reid</a
+							>
+							on
+							<a
+								href="https://unsplash.com/s/photos/neon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Unsplash</a
+							></span
+						>
+					</li>
+
+					<li class="video">
+						<img src="images/alexander-popov-3InMDrsuYrk-unsplash.jpg" alt="" />
+						<span
+							>Photo by
+							<a
+								href="https://unsplash.com/@5tep5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Alexander Popov</a
+							>
+							on
+							<a
+								href="https://unsplash.com/s/photos/neon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+								>Unsplash</a
+							></span
+						>
+					</li>
+				</ul>
 			</div>
 		</main>
 	</body>

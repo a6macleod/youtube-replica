@@ -1,12 +1,8 @@
 /* CSS has been reset per css-reset.css */
 
-body {
-	/*background: green;*/
-}
-
 header {
 	height: 100px;
-	background: #0f6375;
+	background: #f2f2f2;
 }
 /* temporary heights and colors */
 main {
@@ -32,28 +28,101 @@ nav {
 	display: flex;
 	max-width: 100%;
 	justify-content: space-between;
-	background: lightblue;
-	padding: 1%;
+	align-items: center;
+	padding: 0 1%;
 }
 
 .youtube-nav,
-.search-bar,
+.search-bar-container,
 .google-nav {
-	height: 40px;
+	padding: 0 10px;
 	/*flex: 1;*/
 	justify-content: center;
 }
 
+/* all nav icons color & size */
+.fa-bars,
+.fa-youtube,
+.fa-video,
+.fa-th,
+.fa-bell,
+.google-nav img {
+	font-size: 25px;
+	color: #999;
+	margin: 0 15px;
+}
+
+.fa-bars,
+.fa-youtube,
+.youtube-logo,
+.fa-video,
+.fa-th,
+.fa-bell,
+.google-nav img:hover {
+	cursor: pointer;
+}
+
+/* youtub-nav (left side) */
 .youtube-nav {
-	background: green;
+	display: flex;
+	align-items: center;
 }
 
-.search-bar {
-	background: orange;
+.fa-youtube {
+	color: #ff0000;
+	padding-right: 0;
+	margin-right: 0;
 }
 
+.youtube-nav .youtube-logo {
+	font-size: 25px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.youtube-logo {
+	display: inline-block;
+	color: #333;
+}
+
+/* search bar */
+.search-bar-container {
+	justify-content: center;
+}
+
+.search-bar-container form {
+	width: 520px;
+	height: 30px;
+	display: flex;
+}
+
+.search-bar-container .search-bar {
+	flex: 1;
+	width: 100%;
+	margin-right: 0;
+}
+
+.search-bar-container .search-button {
+	display: relative;
+	margin: 0 15px;
+	margin-left: 0;
+	background: #f2f2f2;
+	color: #b3b3b3;
+}
+
+.search-bar-container .search-button:hover {
+	cursor: pointer;
+	background: #ccc;
+	color: #333;
+}
+
+/* Google nav (right side) */
 .google-nav {
-	background: purple;
+	display: flex;
+	align-items: center;
+}
+
+.google-nav img {
+	max-height: 55px;
 }
 
 /* Content section */
@@ -84,4 +153,9 @@ main {
 
 	.sidebar-videos {
 	}
+}
+
+/* Side bar suggested videos */
+.video img {
+	width: 150px;
 }
