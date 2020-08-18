@@ -1,12 +1,5 @@
 /* CSS has been reset per css-reset.css */
 
-/* temporary heights and colors */
-.sidebar-videos {
-	background: #19a2c2;
-	text-align: center;
-}
-/* end temporary heights and colors */
-
 /* Header section */
 header {
 	background: #f2f2f2;
@@ -120,24 +113,29 @@ nav {
 /* Content sections layout */
 main {
 	display: flex;
+	margin-top: 2%;
 }
 
 .sidebar-videos {
 	flex: 1;
 	margin-right: 5%;
+	margin-left: 1%;
 }
 
 .featured-video-container {
 	flex: 2;
 	text-align: left;
 	margin-left: 5%;
-	/*flex-basis: 55%;*/
 }
 
 /* Reorder main content */
 @media (max-width: 1000px) {
 	main {
 		flex-direction: column;
+	}
+	.sidebar-videos,
+	.featured-video-container {
+		margin: 1% 5%;
 	}
 }
 
@@ -201,6 +199,35 @@ main {
 }
 
 /* Side bar suggested videos */
+.video {
+	display: flex;
+	margin-bottom: 10px;
+}
+
 .video img {
 	width: 150px;
+	margin-right: 10px;
+}
+
+.credit,
+.credit a {
+	color: #8c8c8c;
+}
+
+.credit a {
+	text-decoration: none;
+}
+
+.credit a:hover {
+	text-decoration: underline;
+}
+
+.credit-container h4 {
+	margin-bottom: 10px;
+}
+
+.credit p {
+	display: inline-block;
+	/*font-size: 0.8em;*/
+	margin-top: 5px;
 }
